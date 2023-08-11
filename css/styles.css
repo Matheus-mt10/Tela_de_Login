@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --purple50: #8f95ed;
+    --purple100: #896cda;
+    --purple150: #853DD9;
+    --purple200: #8516D2;   
+}
+
+main{ 
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( to bottom , var(--purple50),var(--purple100), var(--purple150), var(--purple200));
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    gap: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.401);
+}
+
+
+.formHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formHead h1 {
+    font-size: 37px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    position: relative;
+}
+
+.formHead h1::before{
+    position: absolute;
+    content: '';
+    width: 40%;
+    background-color: #8516D2;
+    height: 3px;
+    bottom: 10px;
+    border-radius: 5px;
+}
+
+#mode_icon{
+    font-size: 23px;
+    cursor: pointer;
+}
+
+
+.socialMedia{
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialMedia  img{
+    width: 35px;
+}
+
+.socialMedia  img:hover{
+    transform: scale(1.2);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputBox label {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.inputField{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid var(--purple200);
+}
+
+
+.inputField i {
+    font-size: 17px;
+}
+
+.inputField input {
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+
+}
+
+.inputField input:focus {
+    outline: none;
+}
+
+.forgotPassword a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgotPassword:hover{
+    transform: scale(1.05);
+}
+
+.login{
+    background-color: var(--purple150);
+    border: none;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+    cursor: pointer;
+}
+
+.login:hover{
+    transform: scale(1.02);
+}
+
+
